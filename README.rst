@@ -6,6 +6,7 @@ A python module that provides methods to work with ‘weekdays’
 
 Examples
 ========
+
 .. code-block:: python
     from datetime import datetime
     from weekdays import weekdays
