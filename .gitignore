@@ -1,0 +1,9 @@
+# Mac OS
+.DS_Store
+
+# Python
+*.pyc
+*.pyo
+dist
+slacker.egg-info
+.tox
