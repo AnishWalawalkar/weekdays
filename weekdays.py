@@ -9,10 +9,13 @@ def weekdays_passed(start, end=datetime.datetime.now()):
 def weekdays_until(end, start=datetime.datetime.now()):
     pass
 
-def enumerate_weekdays(end, start=datetime.datetime.now()):
-    pass
+def range_weekdays(start, end):
+    while not start == end:
+        if is_weekday(start):
+            yield start
+        start += datetime.timedelta(days=1)
 
-def prev_weekday(date, num_days=0):
+def prev_weekdays(date, num_days=0):
     def inner(date):
         if is_weekday(date):
             return date
