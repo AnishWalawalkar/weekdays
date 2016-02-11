@@ -2,12 +2,7 @@
 weekdays
 =======
 
-|build status|_
-
-About
-=====
-
-weekdays is a python module that provides methods to work with ‘weekdays’
+A python module that provides methods to work with ‘weekdays’
 
 Examples
 ========
