@@ -1,6 +1,6 @@
 import unittest
-from datetime import datetime
-from datetime import timedelta
+from datetime import datetime, timedelta
+
 from weekdays import weekdays
 
 
@@ -64,3 +64,10 @@ class TestWeekdays(unittest.TestCase):
         for date in weekdays.range_weekdays(*self.date_range):
             dates_list.append(date)
         self.assertEqual(dates_list, self.dates)
+
+    def test_rangeweekdays_inverteddates(self):
+        dates_list = []
+        for date in weekdays.range_weekdays(
+            self.date_range[1], self.date_range[0]):
+            dates_list.append(date)
+        self.assertEqual(dates_list, [])
