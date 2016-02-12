@@ -16,6 +16,15 @@ Installation
 
     $ pip install pyweekdays
 
+Manual Installation
+===================
+
+.. code-block:: bash
+
+    $ git clone https://github.com/AnishWalawalkar/weekdays.git
+    $ cd weekdays/
+    $ python setup.py install
+
 Examples
 ========
 
