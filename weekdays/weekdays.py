@@ -30,7 +30,7 @@ def weekdays_until(start, end):
 def date_range(start, end):
     '''returns a generator that can be used to iterate over the weekdays in the range start to end-1'''
     if start > end:
-        return []
+        return
     while not start == end:
         if is_weekday(start):
             yield start
