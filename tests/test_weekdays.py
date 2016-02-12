@@ -45,7 +45,7 @@ class TestWeekdays(unittest.TestCase):
 
     def test_nextweekday_withweekday(self):
         self.assertEqual(
-            weekdays.next_weekday(self.weekday), self.weekday)
+            weekdays.next_weekday(self.weekday), self.weekday+timedelta(days=1))
 
     def test_nextday_withweekend(self):
         self.assertEqual(
@@ -53,7 +53,7 @@ class TestWeekdays(unittest.TestCase):
 
     def test_prevweekday_withweekday(self):
         self.assertEqual(
-            weekdays.prev_weekday(self.weekday), self.weekday)
+            weekdays.prev_weekday(self.weekday), self.weekday-timedelta(days=1))
 
     def test_prevday_withweekend(self):
         self.assertEqual(
@@ -61,13 +61,13 @@ class TestWeekdays(unittest.TestCase):
 
     def test_rangeweekdays(self):
         dates_list = []
-        for date in weekdays.range_weekdays(*self.date_range):
+        for date in weekdays.date_range(*self.date_range):
             dates_list.append(date)
         self.assertEqual(dates_list, self.dates)
 
     def test_rangeweekdays_inverteddates(self):
         dates_list = []
-        for date in weekdays.range_weekdays(
+        for date in weekdays.date_range(
             self.date_range[1], self.date_range[0]):
             dates_list.append(date)
         self.assertEqual(dates_list, [])
