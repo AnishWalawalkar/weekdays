@@ -1,6 +1,6 @@
 __all__ = [
     'is_weekday', 'weekdays_passed', 'weekdays_until',
-    'range_weekdays', 'prev_weekdays', 'next_weekday'
+    'date_range', 'prev_weekdays', 'next_weekday'
 ]
 
 from datetime import timedelta
