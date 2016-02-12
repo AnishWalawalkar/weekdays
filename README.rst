@@ -1,9 +1,11 @@
-=======
+========
 weekdays
-=======
+========
 
-.. image:: https://travis-ci.org/AnishWalawalkar/weekdays.svg?branch=master
-    :target: https://travis-ci.org/AnishWalawalkar/weekdays
+|pypi|_
+|build status|_
+
+
 
 A python module that provides methods to work with weekdays
 
@@ -46,3 +48,9 @@ Examples
     # 2016-02-10 00:00:00
     # 2016-02-11 00:00:00
     # 2016-02-12 00:00:00
+
+
+.. |build status| image:: https://travis-ci.org/AnishWalawalkar/weekdays.svg?branch=master
+.. _build status: https://travis-ci.org/AnishWalawalkar/weekdays
+.. |pypi| image:: https://badge.fury.io/py/pyweekdays.svg
+.. _pypi: https://badge.fury.io/py/pyweekdays
