@@ -1,1 +1,1 @@
-__all__ = ['weekdays']
+from weekdays import *
