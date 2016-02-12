@@ -4,7 +4,7 @@ weekdays
 
 |pypi|_
 |build status|_
-
+|MIT License|_
 
 
 A python module that provides methods to work with weekdays
@@ -63,3 +63,5 @@ Examples
 .. _build status: https://travis-ci.org/AnishWalawalkar/weekdays
 .. |pypi| image:: https://badge.fury.io/py/pyweekdays.svg
 .. _pypi: https://badge.fury.io/py/pyweekdays
+.. |MIT License| image:: https://img.shields.io/badge/license-MIT-blue.svg
+.. _MIT License: https://en.wikipedia.org/wiki/MIT_License
