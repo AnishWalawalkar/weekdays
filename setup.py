@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name="weekdays",
+    name="pyweekdays",
     version="0.1.0",
     packages=['weekdays'],
     description='a module to work with weekdays',
@@ -11,8 +11,6 @@ setup(
     license='https://opensource.org/licenses/MIT',
     classifiers=(
         'Intended Audience :: Developers',
-        'License :: The MIT License (MIT)',
-        'Natural Language :: English',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.2',

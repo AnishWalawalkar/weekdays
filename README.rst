@@ -12,7 +12,7 @@ Installation
 
 .. code-block:: bash
 
-    $ pip install weekdays
+    $ pip install pyweekdays
 
 Examples
 ========
