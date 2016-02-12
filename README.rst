@@ -5,7 +5,14 @@ weekdays
 .. image:: https://travis-ci.org/AnishWalawalkar/weekdays.svg?branch=master
     :target: https://travis-ci.org/AnishWalawalkar/weekdays
 
-A python module that provides methods to work with ‘weekdays’
+A python module that provides methods to work with weekdays
+
+Installation
+============
+
+.. code-block:: bash
+
+    $ pip install weekdaysx
 
 Examples
 ========
