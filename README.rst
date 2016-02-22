@@ -30,10 +30,16 @@ Examples
 
 .. code-block:: python
 
+    import time
     from datetime import datetime
     from weekdays import weekdays
 
     date = datetime(2016, 2, 10)
+
+    # convert time object to datetime object to work with weekdays module
+    weekdays.time_to_datetime(time_struct=time.gmtime()) # datetime.datetime(2016, 2, 22, 16, 42, 9)
+    weekdays.time_to_datetime(time_struct=time.localtime()) # datetime.datetime(2016, 2, 22, 11, 42, 39)
+    weekdays.time_to_datetime(time_in_seconds=time.time()) # datetime.datetime(2016, 2, 22, 11, 43, 14, 760845)
 
     weekdays.is_weekday(date) # True
 
