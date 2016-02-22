@@ -3,8 +3,16 @@ __all__ = [
     'date_range', 'prev_weekday', 'next_weekday'
 ]
 
+import time
 from datetime import timedelta
+from datetime import datetime
 
+def time_to_datetime(time_struct=None, time_in_seconds=None):
+    if not  (time_struct or time_in_seconds):
+        raise Exception('One of "time_struct" or "time_in_seconds" keyword arguements must be provided')
+    if time_struct:
+        time_in_seconds = time.mktime(time_struct)
+    return datetime.fromtimestamp(time_in_seconds)
 
 def is_weekday(date):
     '''Checks if the date provided as an arguement is a weekday or not'''
@@ -62,4 +70,3 @@ def next_weekday(date, num_days=0):
     date += timedelta(days=num_days)
 
     return date if is_weekday(date) else date + timedelta(days=weekend_offset(date, flag=True))
-

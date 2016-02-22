@@ -1,3 +1,4 @@
+import time
 import unittest
 from datetime import datetime, timedelta
 
@@ -24,6 +25,28 @@ class TestWeekdays(unittest.TestCase):
             datetime(2016, 2, 25, 0, 0),
             datetime(2016, 2, 26, 0, 0)
         ]
+
+    def test_time_to_datetime_with_timestruct(self):
+        dt1 = weekdays.time_to_datetime(time_struct=time.gmtime())
+        dt1_details = (dt1.year, dt1.month, dt1.day)
+
+        dt2 = datetime.now()
+        dt2_details = (dt2.year, dt2.month, dt2.day)
+
+        self.assertEqual(dt1_details, dt2_details)
+
+    def test_time_to_datetime_with_epochtime(self):
+        dt1 = weekdays.time_to_datetime(time_in_seconds=time.time())
+        dt1_details = (dt1.year, dt1.month, dt1.day)
+
+        dt2 = datetime.now()
+        dt2_details = (dt2.year, dt2.month, dt2.day)
+
+        self.assertEqual(dt1_details, dt2_details)
+
+    def test_time_to_datetime_withexception(self):
+        with self.assertRaises(Exception) as context:
+            weekdays.time_to_datetime()
 
     def test_isweekday(self):
         self.assertTrue(weekdays.is_weekday(self.weekday))
