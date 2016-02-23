@@ -4,6 +4,7 @@ weekdays
 
 |pypi|_
 |build status|_
+|pypi downloads|_
 |MIT License|_
 
 
@@ -67,7 +68,14 @@ Examples
 
 .. |build status| image:: https://travis-ci.org/AnishWalawalkar/weekdays.svg?branch=master
 .. _build status: https://travis-ci.org/AnishWalawalkar/weekdays
-.. |pypi| image:: https://badge.fury.io/py/pyweekdays.svg
-.. _pypi: https://badge.fury.io/py/pyweekdays
+.. |pypi| image:: https://img.shields.io/pypi/v/pyweekdays.svg
+.. _pypi: https://pypi.python.org/pypi/pyweekdays
 .. |MIT License| image:: https://img.shields.io/badge/license-MIT-blue.svg
 .. _MIT License: https://en.wikipedia.org/wiki/MIT_License
+.. |pypi downloads| image:: https://img.shields.io/pypi/dm/pyweekdays.svg
+.. _pypi downloads: https://pypi.python.org/pypi/pyweekdays
+
+
+
+
+.. image:: https://img.shields.io/pypi/v/nine.svg   :target: https://pypi.python.org/pypi/pyweekdays
