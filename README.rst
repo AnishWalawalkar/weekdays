@@ -74,8 +74,3 @@ Examples
 .. _MIT License: https://en.wikipedia.org/wiki/MIT_License
 .. |pypi downloads| image:: https://img.shields.io/pypi/dm/pyweekdays.svg
 .. _pypi downloads: https://pypi.python.org/pypi/pyweekdays
-
-
-
-
-.. image:: https://img.shields.io/pypi/v/nine.svg   :target: https://pypi.python.org/pypi/pyweekdays
