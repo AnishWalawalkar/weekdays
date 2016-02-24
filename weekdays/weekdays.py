@@ -49,24 +49,32 @@ def weekend_offset(date, flag=False):
         return 2 if flag else 1
     return 1 if flag else 2
 
-def prev_weekday(date, num_days=0):
+def prev_weekday(date, num_days=1):
     '''return the previous weekday'''
     if num_days < 0:
         return date
-    if not num_days:
-        num_days = 1
 
-    date -= timedelta(days=num_days)
+    day_count = 0
+    prev_day = date
 
-    return date if is_weekday(date) else date - timedelta(days=weekend_offset(date))
+    while day_count < num_days:
+        prev_day -= timedelta(days=1)
+        if is_weekday(prev_day):
+            day_count += 1
 
-def next_weekday(date, num_days=0):
+    return prev_day
+
+def next_weekday(date, num_days=1):
     '''return the next weekday'''
     if num_days < 0:
         return date
-    if not num_days:
-        num_days = 1
 
-    date += timedelta(days=num_days)
+    day_count = 0
+    next_day = date
 
-    return date if is_weekday(date) else date + timedelta(days=weekend_offset(date, flag=True))
+    while day_count < num_days:
+        next_day += timedelta(days=1)
+        if is_weekday(next_day):
+            day_count += 1
+
+    return next_day
