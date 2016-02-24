@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: pyweekdays
+Version: 0.1.3
+Summary: a module to work with weekdays
+Home-page: https://github.com/AnishWalawalkar/weekdays.git
+Author: Anish Walawalkar
+Author-email: anish.sanjiv@gmail.com
+License: https://opensource.org/licenses/MIT
+Description: UNKNOWN
+Keywords: time datetime weekdays
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5

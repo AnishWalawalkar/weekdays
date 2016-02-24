@@ -1,0 +1,9 @@
+README.rst
+setup.cfg
+setup.py
+pyweekdays.egg-info/PKG-INFO
+pyweekdays.egg-info/SOURCES.txt
+pyweekdays.egg-info/dependency_links.txt
+pyweekdays.egg-info/top_level.txt
+weekdays/__init__.py
+weekdays/weekdays.py
