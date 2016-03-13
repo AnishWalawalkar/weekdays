@@ -5,7 +5,7 @@ from datetime import datetime
 
 __all__ = [
     'is_weekday', 'weekdays_passed', 'weekdays_until',
-    'date_range', 'prev_weekday', 'next_weekday'
+    'date_range', 'prev_weekday', 'next_weekday', 'time_to_datetime'
 ]
 
 def time_to_datetime(time_struct=None, time_in_seconds=None):
@@ -14,7 +14,10 @@ def time_to_datetime(time_struct=None, time_in_seconds=None):
         raise Exception(
             'One of "time_struct" or "time_in_seconds" keyword arguements must be provided')
     if time_struct:
-        time_in_seconds = time.mktime(time_struct)
+        try:
+            time_in_seconds = time.mktime(time_struct)
+        except TypeError as e:
+            raise Exception(e)
     return datetime.fromtimestamp(time_in_seconds)
 
 def is_weekday(date):
