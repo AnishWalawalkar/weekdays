@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="pyweekdays",
-    version="0.1.4",
+    version="0.1.5",
     packages=['weekdays'],
     description='a module to work with weekdays',
     author='Anish Walawalkar',
@@ -20,3 +20,4 @@ setup(
     ),
     keywords='time datetime weekdays'
 )
+
